@@ -21,16 +21,32 @@ int main(void) {
     printf("bitmap->height = %d\n", bitmap.height);
     printf("bitmap->ch = %d\n", bitmap.ch);
 
-    /* グレースケールに変換 */
-    for (j = 0; j < bitmap.height; j++) {
-        for (i = 0; i < bitmap.width; i++) {
-            sum = 0;
-            for (c = 0; c < bitmap.ch; c++) {
-                sum += bitmap.data[bitmap.ch * (i + j * bitmap.width) + c];
-            }
-            ave = sum / bitmap.ch;
-            for (c = 0; c < bitmap.ch; c++) {
-                bitmap.data[bitmap.ch * (i + j * bitmap.width) + c] = ave;
+    ///* グレースケールに変換 */
+    //for (j = 0; j < bitmap.height; j++) {
+    //    for (i = 0; i < bitmap.width; i++) {
+    //        sum = 0;
+    //        for (c = 0; c < bitmap.ch; c++) {
+    //            sum += bitmap.data[bitmap.ch * (i + j * bitmap.width) + c];
+    //        }
+    //        ave = sum / bitmap.ch;
+    //        for (c = 0; c < bitmap.ch; c++) {
+    //            bitmap.data[bitmap.ch * (i + j * bitmap.width) + c] = ave;
+    //        }
+    //    }
+    //}
+
+    int tmp;
+
+    for (j = 0; j < bitmap.height; j++)
+    {
+        for (i = 0; i < bitmap.width; i++)
+        {
+            for (c = 0; c < bitmap.ch; c++)
+            {
+                if (c == 2)
+                {
+                    bitmap.data[bitmap.ch * (i + j * bitmap.width) + c] = 125;
+                }
             }
         }
     }
