@@ -1,0 +1,39 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(36,5): warning MSB4211: プロパティ "IntermediateOutputPath" は初めて値に設定されますが、これは "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets (35,5)" で既に使用されています。
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(337,5): warning MSB4211: プロパティ "CleanFile" は初めて値に設定されますが、これは "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets (35,5)" で既に使用されています。
+  pngtest.c
+pngtest.obj : warning LNK4075: /EDITANDCONTINUE は /SAFESEH の指定によって無視されます。
+  pngtest.vcxproj -> C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\projects\visualc71\.\Win32_LIB_Debug\Test\pngtest.exe
+  Testing...
+  
+   Testing libpng version 1.6.37
+     with zlib   version 1.2.11
+  
+  libpng version 1.6.37
+  Copyright (c) 2018-2019 Cosmin Truta
+  Copyright (c) 1998-2002,2004,2006-2018 Glenn Randers-Pehrson
+  Copyright (c) 1996-1997 Andreas Dilger
+  Copyright (c) 1995-1996 Guy Eric Schalnat, Group 42, Inc.
+   library (10637): libpng version 1.6.37 - April 14, 2019
+   pngtest (10637): libpng version 1.6.37 - April 14, 2019
+  
+   Testing ..\..\pngtest.png: eXIf type MM, 52 bytes
+  
+   Pass 0: rwrwrwrwrwrwrwrwrw
+   Pass 1: rwrwrwrwrwrwrwrwrw
+   Pass 2: rwrwrwrwrwrwrwrw
+   Pass 3: rwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrw
+   Pass 4: rwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrw
+   Pass 5: rwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrw
+           rwrwrwrw
+   Pass 6: rwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrw
+           rwrwrwrwrw eXIf type MM, 52 bytes
+   eXIf type MM, 52 bytes
+  
+   PASS (9782 zero samples)
+   tIME = 7 Jun 1996 17:58:08 +0000
+   libpng passes test
+   Default limits:
+    width_max  = 1000000
+    height_max = 1000000
+    cache_max  = 1000
+    malloc_max = 8000000

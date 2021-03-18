@@ -1,0 +1,140 @@
+﻿  png.c
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(173): error C2220: 次の警告はエラーとして処理されます
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(173): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(161) : 注: この行で比較を行ってインデックス 'length' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(173) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(665): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(664) : 注: この行で比較を行ってインデックス 'row' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(665) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(609): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(608) : 注: この行で比較を行ってインデックス 'i' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(609) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(583): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(580) : 注: この行で比較を行ってインデックス 'i' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(583) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(542): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(541) : 注: この行で比較を行ってインデックス 'i' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(542) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(495): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(494) : 注: この行で比較を行ってインデックス 'i' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(495) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1147): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1130) : 注: この行で比較を行ってインデックス 'gAMA' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1147) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1996): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1994) : 注: この行で比較を行ってインデックス 'profile_length' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1996) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(2163): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(2134) : 注: この行で比較を行ってインデックス '' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(2163) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(2145): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(2134) : 注: この行で比較を行ってインデックス '' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(2145) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(2155): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(2134) : 注: この行で比較を行ってインデックス '' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(2155) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(2053): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(2052) : 注: この行で比較を行ってインデックス 'temp' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(2053) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(2046): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(2045) : 注: この行で比較を行ってインデックス 'temp' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(2046) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(2486): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(2486) : 注: この行で比較を行ってインデックス 'total' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(2486) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(3014): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(2971) : 注: この行で比較を行ってインデックス 'fp' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(3014) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(2942): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(2928) : 注: この行で比較を行ってインデックス 'fp' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(2942) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(3327): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(3320) : 注: この行で比較を行ってインデックス 'r' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(3327) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(3494): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(3493) : 注: この行で比較を行ってインデックス 'r' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(3494) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(3554): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(3553) : 注: この行で比較を行ってインデックス 'r' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(3554) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(3894): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(3866) : 注: この行で比較を行ってインデックス 'value' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(3894) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(4181): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(4179) : 注: この行で比較を行ってインデックス 'i' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(4181) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(4170): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(4168) : 注: この行で比較を行ってインデックス 'i' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(4170) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(4148): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(4146) : 注: この行で比較を行ってインデックス 'i' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(4148) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(4343): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(4334) : 注: この行で比較を行ってインデックス 'option' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(4343) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1974): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1973) : 注: この行で比較を行ってインデックス 'profile_length' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1974) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(2406): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(2332) : 注: この行で比較を行ってインデックス 'i' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(2406) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(2376): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(2332) : 注: この行で比較を行ってインデックス 'i' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(2376) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(2363): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(2332) : 注: この行で比較を行ってインデックス 'i' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(2363) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(4125): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(4124) : 注: この行で比較を行ってインデックス 'i' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(4125) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(3529): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(3528) : 注: この行で比較を行ってインデックス 'r' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(3529) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(4106): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(4104) : 注: この行で比較を行ってインデックス 'last' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(4106) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(4098): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(4096) : 注: この行で比較を行ってインデックス 'last' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(4098) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(4091): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(4085) : 注: この行で比較を行ってインデックス 'i' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(4091) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1535): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1509) : 注: この行で比較を行ってインデックス 'blue_scale' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1535) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1532): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1509) : 注: この行で比較を行ってインデックス 'blue_scale' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1532) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1530): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1509) : 注: この行で比較を行ってインデックス 'blue_scale' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1530) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1584): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1560) : 注: この行で比較を行ってインデックス '' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1584) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1582): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1560) : 注: この行で比較を行ってインデックス '' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1582) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1580): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1560) : 注: この行で比較を行ってインデックス '' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1580) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1577): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1560) : 注: この行で比較を行ってインデックス '' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1577) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1575): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1560) : 注: この行で比較を行ってインデックス '' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1575) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1573): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1560) : 注: この行で比較を行ってインデックス '' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1573) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1570): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1560) : 注: この行で比較を行ってインデックス '' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1570) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1568): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1560) : 注: この行で比較を行ってインデックス '' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1568) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1566): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1560) : 注: この行で比較を行ってインデックス '' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(1566) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(90): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(84) : 注: この行で比較を行ってインデックス 'start' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\png.c(90) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します

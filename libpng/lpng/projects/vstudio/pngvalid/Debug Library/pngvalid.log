@@ -1,0 +1,4 @@
+﻿  pngvalid.c
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\contrib\libtests\pngvalid.c(53,12): error C2220: 次の警告はエラーとして処理されます
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\contrib\libtests\pngvalid.c(53,12): warning C4464: 相対インクルード パスに '..' が含まれています
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\contrib\libtests\pngvalid.c(160,12): warning C4464: 相対インクルード パスに '..' が含まれています

@@ -1,0 +1,21 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(36,5): warning MSB4211: プロパティ "IntermediateOutputPath" は初めて値に設定されますが、これは "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets (35,5)" で既に使用されています。
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(337,5): warning MSB4211: プロパティ "CleanFile" は初めて値に設定されますが、これは "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets (35,5)" で既に使用されています。
+  adler32.c
+  compress.c
+  crc32.c
+  deflate.c
+  gzclose.c
+  gzlib.c
+  gzread.c
+  gzwrite.c
+  infback.c
+  inffast.c
+  inflate.c
+  inftrees.c
+  trees.c
+  uncompr.c
+  zutil.c
+  コードを生成中...
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1459,5): warning MSB8012: TargetPath(C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\projects\visualc71\.\Win32_LIB_Debug\ZLib\zlib.lib) が Library の OutputFile プロパティ値 (C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\projects\visualc71\Win32_LIB_Debug\ZLib\zlibd.lib) と一致しません。このため、プロジェクトが正常にビルドされない可能性があります。この問題を解決するには、$(OutDir)、$(TargetName)、および $(TargetExt) の各プロパティ値が、%(Lib.OutputFile) で指定されている値と一致することを確認してください。
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1461,5): warning MSB8012: TargetName(zlib) が Library の OutputFile プロパティ値 (zlibd) と一致しません。このため、プロジェクトが正常にビルドされない可能性があります。この問題を解決するには、$(OutDir)、$(TargetName)、および $(TargetExt) の各プロパティ値が、%(Lib.OutputFile) で指定されている値と一致することを確認してください。
+  zlib.vcxproj -> C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\projects\visualc71\.\Win32_LIB_Debug\ZLib\zlib.lib

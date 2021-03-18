@@ -1,0 +1,1 @@
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\projects\visualc71\Win32_LIB_Release\ZLib\zlib.lib

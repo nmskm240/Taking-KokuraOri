@@ -1,0 +1,11 @@
+﻿  pngtest.c
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\pngtest.c(1952): error C2220: 次の警告はエラーとして処理されます
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\pngtest.c(1952): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\pngtest.c(1945) : 注: この行で比較を行ってインデックス 'i' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\pngtest.c(1952) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\pngtest.c(1553): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\pngtest.c(1551) : 注: この行で比較を行ってインデックス 'i' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\pngtest.c(1553) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\pngtest.c(1333): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\pngtest.c(1331) : 注: この行で比較を行ってインデックス 'i' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\lpng\pngtest.c(1333) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します

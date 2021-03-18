@@ -1,0 +1,7 @@
+﻿  main.c
+C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\main.c(25,19): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\main.c(26,23): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\main.c(28,27): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\main.c(32,27): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\main.c(12,11): warning C4101: 'fo': ローカル変数は 1 度も使われていません。
+  Talking KokuraOri.vcxproj -> C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Debug\Talking KokuraOri.exe

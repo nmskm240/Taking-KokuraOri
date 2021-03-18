@@ -1,0 +1,208 @@
+﻿  adler32.c
+  compress.c
+  crc32.c
+  deflate.c
+  infback.c
+  inffast.c
+  inflate.c
+  inftrees.c
+  trees.c
+  uncompr.c
+  zutil.c
+  コードを生成中...
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\trees.c(971): error C2220: 次の警告はエラーとして処理されます
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\trees.c(971): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\trees.c(962) : 注: この行で比較を行ってインデックス '' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\trees.c(971) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\trees.c(658): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\trees.c(658) : 注: この行で比較を行ってインデックス 'n' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\trees.c(658) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\trees.c(819): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\trees.c(818) : 注: この行で比較を行ってインデックス 'max_blindex' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\trees.c(819) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\trees.c(849): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\trees.c(847) : 注: この行で比較を行ってインデックス 'rank' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\trees.c(849) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\trees.c(465): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\trees.c(458) : 注: この行で比較を行ってインデックス 'j' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\trees.c(465) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\trees.c(460): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\trees.c(460) : 注: この行で比較を行ってインデックス 'j' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\trees.c(460) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\trees.c(552): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\trees.c(510) : 注: この行で比較を行ってインデックス 'h' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\trees.c(557) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\trees.c(511): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\trees.c(510) : 注: この行で比較を行ってインデックス 'h' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\trees.c(524) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\trees.c(597): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\trees.c(596) : 注: この行で比較を行ってインデックス 'n' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\trees.c(600) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(433): error C2220: 次の警告はエラーとして処理されます
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(433): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(422) : 注: この行で比較を行ってインデックス 'copy' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(433) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(430): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(422) : 注: この行で比較を行ってインデックス 'copy' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(430) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(1204): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(1199) : 注: この行で比較を行ってインデックス 'bits' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(1204) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(1180): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(1149) : 注: この行で比較を行ってインデックス 'copy' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(1187) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(1176): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(1171) : 注: この行で比較を行ってインデックス 'copy' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(1187) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(1150): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(1149) : 注: この行で比較を行ってインデックス 'copy' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(1187) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(1173): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(1171) : 注: この行で比較を行ってインデックス 'copy' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(1187) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(1112): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(1106) : 注: この行で比較を行ってインデックス 'bits' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(1112) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(1062): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(1056) : 注: この行で比較を行ってインデックス 'bits' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(1062) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(1047): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(1045) : 注: この行で比較を行ってインデックス 'left' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(1047) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(968): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(963) : 注: この行で比較を行ってインデックス 'bits' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(968) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(941): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(940) : 注: この行で比較を行ってインデックス 'bits' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(941) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(867): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(857) : 注: この行で比較を行ってインデックス 'bits' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(867) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(764): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(764) : 注: この行で比較を行ってインデックス '' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(764) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(750): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(745) : 注: この行で比較を行ってインデックス 'bits' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(750) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(748): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(745) : 注: この行で比較を行ってインデックス 'bits' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(748) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(740): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(734) : 注: この行で比較を行ってインデックス 'bits' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(740) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(737): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(734) : 注: この行で比較を行ってインデックス 'bits' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(737) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(730): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(726) : 注: この行で比較を行ってインデックス 'bits' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(730) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(728): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(726) : 注: この行で比較を行ってインデックス 'bits' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(728) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(668): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(662) : 注: この行で比較を行ってインデックス 'bits' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inflate.c(668) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inffast.c(107): error C2220: 次の警告はエラーとして処理されます
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inffast.c(107): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inffast.c(104) : 注: この行で比較を行ってインデックス 'bits' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inffast.c(277) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inffast.c(138): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inffast.c(135) : 注: この行で比較を行ってインデックス 'bits' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inffast.c(267) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inffast.c(127): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inffast.c(126) : 注: この行で比較を行ってインデックス 'bits' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inffast.c(267) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inffast.c(154): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inffast.c(153) : 注: この行で比較を行ってインデックス 'bits' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inffast.c(262) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inffast.c(151): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inffast.c(150) : 注: この行で比較を行ってインデックス 'bits' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\inffast.c(262) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\infback.c(610): error C2220: 次の警告はエラーとして処理されます
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\infback.c(610): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\infback.c(609) : 注: この行で比較を行ってインデックス 'left' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\infback.c(610) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\infback.c(594): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\infback.c(589) : 注: この行で比較を行ってインデックス 'left' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\infback.c(601) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\infback.c(542): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\infback.c(540) : 注: この行で比較を行ってインデックス 'bits' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\infback.c(555) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\infback.c(487): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\infback.c(483) : 注: この行で比較を行ってインデックス 'left' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\infback.c(487) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\infback.c(407): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\infback.c(402) : 注: この行で比較を行ってインデックス 'bits' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\infback.c(407) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\infback.c(380): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\infback.c(379) : 注: この行で比較を行ってインデックス 'bits' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\infback.c(380) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\infback.c(309): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\infback.c(302) : 注: この行で比較を行ってインデックス '' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\infback.c(309) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(1754): error C2220: 次の警告はエラーとして処理されます
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(1867): error C2220: 次の警告はエラーとして処理されます
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(1992): error C2220: 次の警告はエラーとして処理されます
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(1992): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(1992) : 注: この行で比較を行ってインデックス '' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(1992) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(1967): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(1961) : 注: この行で比較を行ってインデックス '' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(1967) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(1592): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(1584) : 注: この行で比較を行ってインデックス '' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(1592) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(1581): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(1574) : 注: この行で比較を行ってインデックス 'curr' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(1581) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(1512): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(1510) : 注: この行で比較を行ってインデックス '' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(1512) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(1375): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(1375) : 注: この行で比較を行ってインデックス 'best_len' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(1375) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(1754): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(1741) : 注: この行で比較を行ってインデックス 'used' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(1754) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(1867): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(1867) : 注: この行で比較を行ってインデックス '' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(1867) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(1861): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(1856) : 注: この行で比較を行ってインデックス '' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(1861) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(966): error C2220: 次の警告はエラーとして処理されます
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(966): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(966) : 注: この行で比較を行ってインデックス 'beg' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(966) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(955): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(955) : 注: この行で比較を行ってインデックス 'beg' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(955) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(944): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(944) : 注: この行で比較を行ってインデックス 'beg' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(944) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(933): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(933) : 注: この行で比較を行ってインデックス 'beg' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(933) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(922): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(922) : 注: この行で比較を行ってインデックス 'beg' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(922) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(922): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(904) : 注: この行で比較を行ってインデックス '' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(922) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(909): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(909) : 注: この行で比較を行ってインデックス 'beg' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(909) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(909): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(904) : 注: この行で比較を行ってインデックス '' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(909) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(2102): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(2102) : 注: この行で比較を行ってインデックス '' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\deflate.c(2102) : 注: この行にメモリの読み込みを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\crc32.c(368): error C2220: 次の警告はエラーとして処理されます
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\crc32.c(368): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\crc32.c(367) : 注: この行で比較を行ってインデックス 'n' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\crc32.c(368) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\adler32.c(168): error C2220: 次の警告はエラーとして処理されます
+C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\adler32.c(168): warning C5045: /Qspectre スイッチが
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\adler32.c(153) : 注: この行で比較を行ってインデックス 'len2' の範囲を確認します
+  C:\Users\bokar\Desktop\話す小倉織\libpng\zlib\adler32.c(168) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
