@@ -63,14 +63,13 @@ int pngFileReadDecode(BITMAPDATA_t* bitmapData, const char* filename) {
     }
 
     bitmapData->width = width;
-    bitmapData->height = height;
+    bitmapData->height = 1;
     if (type == PNG_COLOR_TYPE_RGB) {
         bitmapData->ch = 3;
     }
     else if (type == PNG_COLOR_TYPE_RGBA) {
         bitmapData->ch = 4;
     }
-    printf("width = %d, height = %d, ch = %d\n", bitmapData->width, bitmapData->height, bitmapData->ch);
 
     bitmapData->data =
         (unsigned char*)malloc(sizeof(unsigned char) * bitmapData->width * bitmapData->height * bitmapData->ch);
