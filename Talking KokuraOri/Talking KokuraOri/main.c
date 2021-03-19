@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 #include "myPng.h"
+#include "colorConvert.h"
 
 int main(void) {
 
@@ -35,7 +36,8 @@ int main(void) {
     //    }
     //}
 
-    int tmp;
+    RGB rgb;
+    HSB hsb;
 
     for (j = 0; j < bitmap.height; j++)
     {
@@ -43,11 +45,20 @@ int main(void) {
         {
             for (c = 0; c < bitmap.ch; c++)
             {
-                if (c == 2)
+                if (c == 0)
                 {
-                    bitmap.data[bitmap.ch * (i + j * bitmap.width) + c] = 125;
+                    rgb.r = bitmap.data[bitmap.ch * (i + j * bitmap.width) + c];
+                }
+                else if (c == 1)
+                {
+                    rgb.g= bitmap.data[bitmap.ch * (i + j * bitmap.width) + c];
+                }
+                else if (c == 2)
+                {
+                    rgb.b = bitmap.data[bitmap.ch * (i + j * bitmap.width) + c];
                 }
             }
+            hsb = RGBtoHSB(&rgb);
         }
     }
 

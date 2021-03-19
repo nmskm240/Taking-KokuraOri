@@ -63,7 +63,7 @@ int pngFileReadDecode(BITMAPDATA_t* bitmapData, const char* filename) {
     }
 
     bitmapData->width = width;
-    bitmapData->height = 1;
+    bitmapData->height = 100;
     if (type == PNG_COLOR_TYPE_RGB) {
         bitmapData->ch = 3;
     }
