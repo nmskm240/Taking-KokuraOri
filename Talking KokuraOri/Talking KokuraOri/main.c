@@ -59,6 +59,25 @@ int main(void) {
                 }
             }
             hsb = RGBtoHSB(&rgb);
+            hsb.h = 20;
+            hsb.s = 100 - hsb.s;
+            hsb.b = 90;
+            rgb = HSBtoRGB(&hsb);
+            for (c = 0; c < bitmap.ch; c++)
+            {
+                if (c == 0)
+                {
+                    bitmap.data[bitmap.ch * (i + j * bitmap.width) + c] = rgb.r;
+                }
+                else if (c == 1)
+                {
+                    bitmap.data[bitmap.ch * (i + j * bitmap.width) + c] = rgb.g;
+                }
+                else if (c == 2)
+                {
+                    bitmap.data[bitmap.ch * (i + j * bitmap.width) + c] = rgb.b;
+                }
+            }
         }
     }
 

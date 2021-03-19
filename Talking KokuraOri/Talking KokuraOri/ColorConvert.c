@@ -3,7 +3,7 @@
 HSB RGBtoHSB(RGB* color)
 {
 	HSB hsb;
-	int max, min, diff, count = 0;
+	int max, min, diff;
 
 	printf("converter in(r:%d g:%d b:%d)\n", color->r, color->g, color->b);
 
@@ -19,26 +19,26 @@ HSB RGBtoHSB(RGB* color)
 	else if (color->r == max)
 	{
 		//H = 60 ~ ((G - B) € (MAX - MIN))
-		hsb.h = 60 * ((color->g - color->b) / diff);
+		hsb.h = (int)(60.0 * ((float)(color->g - color->b) / (float)diff));
 	}
 	else if (color->g == max)
 	{
 		//H = 60 ~ ((B - R) € (MAX - MIN)) +120
-		hsb.h = 60 * ((color->b - color->r) / diff) + 120;
+		hsb.h = (int)(60.0 * ((float)(color->b - color->r) / (float)diff) + 120.0);
 	}
 	else
 	{
 		//H = 60 ~ ((R - G) € (MAX - MIN)) +240
-		hsb.h = 60 * ((color->r - color->g) / diff) + 240;
+		hsb.h = (int)(60.0 * ((float)(color->r - color->g) / (float)diff) + 240.0);
 	}
 
 	if (hsb.h < 0)
 	{
-		hsb.h += 360;
+		hsb.h += 360.0;
 	}
 
-	hsb.s = (max == 0) ? 0 : (diff / max) * 100;
-	hsb.b = (max / 255) * 100;
+	hsb.s = (max == 0) ? 0 : (int)(((float)diff / (float)max) * 100.0);
+	hsb.b = (int)(((float)max / (float)255) * 100.0);
 
 	printf("max:%d min:%d diff:%d\n", max, min, diff);
 	printf("converter out(h:%d s:%d b:%d)\n", hsb.h, hsb.s, hsb.b);
@@ -52,18 +52,18 @@ RGB HSBtoRGB(HSB* color)
 	int max, min, diff;
 
 	max = color->b;
-	min = max - ((color->s / 100) * max);
+	min = (int)((float)max - (((float)color->s / 100.0) * max));
 	diff = max - min;
 
 	if (0 <= color->h && color->h < 60)
 	{
 		rgb.r = max;
-		rgb.g = (color->h / 60) * diff + min;
+		rgb.g = (int)(((float)color->h / 60.0) * diff + min);
 		rgb.b = min;
 	}
 	else if (60 <= color->h && color->h < 120)
 	{
-		rgb.r = ((120 - color->h) / 60) * diff + min;
+		rgb.r = (int)(((120.0 - (float)color->h) / 60.0) * diff + min);
 		rgb.g = max;
 		rgb.b = min;
 	}
@@ -71,17 +71,17 @@ RGB HSBtoRGB(HSB* color)
 	{
 		rgb.r = min;
 		rgb.g = max;
-		rgb.b = ((color->h -120) / 60) * diff + min;
+		rgb.b = (int)((((float)color->h -120.0) / 60.0) * diff + min);
 	}
 	else if (180 <= color->h && color->h < 240)
 	{
 		rgb.r = min;
-		rgb.g = ((240 - color->h) / 60) * diff +min;
+		rgb.g = (int)(((240.0 - (float)color->h) / 60.0) * diff + min);
 		rgb.b = max;
 	}
 	else if (240 <= color->h && color->h < 300)
 	{
-		rgb.r = ((color->h - 240) / 60) * diff + min;
+		rgb.r = (int)((((float)color->h - 240.0) / 60.0) * diff + min);
 		rgb.g = min;
 		rgb.b = max;
 	}
@@ -89,7 +89,7 @@ RGB HSBtoRGB(HSB* color)
 	{
 		rgb.r = max;
 		rgb.g = min;
-		rgb.b = ((360 - color->h) / 60) * diff +min;
+		rgb.b = (int)(((360.0 - (float)color->h) / 60.0) * diff + min);
 	}
 
 	return rgb;

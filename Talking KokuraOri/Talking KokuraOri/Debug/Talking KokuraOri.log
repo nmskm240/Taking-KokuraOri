@@ -1,18 +1,9 @@
-﻿  ColorConvert.c
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\ColorConvert.c(8,9): warning C4477: 'printf' : 書式文字列 '%d' には、型 'int' の引数が必要ですが、可変個引数 1 は型 'double' です
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\ColorConvert.c(8,9): warning C4477: 'printf' : 書式文字列 '%d' には、型 'int' の引数が必要ですが、可変個引数 2 は型 'double' です
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\ColorConvert.c(8,9): warning C4477: 'printf' : 書式文字列 '%d' には、型 'int' の引数が必要ですが、可変個引数 3 は型 'double' です
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\ColorConvert.c(10,11): warning C4013: 関数 'Max' は定義されていません。int 型の値を返す外部関数と見なします。
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\ColorConvert.c(11,11): warning C4013: 関数 'Min' は定義されていません。int 型の値を返す外部関数と見なします。
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\ColorConvert.c(44,9): warning C4477: 'printf' : 書式文字列 '%d' には、型 'int' の引数が必要ですが、可変個引数 1 は型 'double' です
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\ColorConvert.c(44,9): warning C4477: 'printf' : 書式文字列 '%d' には、型 'int' の引数が必要ですが、可変個引数 2 は型 'double' です
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\ColorConvert.c(44,9): warning C4477: 'printf' : 書式文字列 '%d' には、型 'int' の引数が必要ですが、可変個引数 3 は型 'double' です
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\ColorConvert.c(54,16): warning C4244: '=': 'double' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\ColorConvert.c(55,38): warning C4244: '=': 'double' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\ColorConvert.c(102,11): warning C4244: 'return': 'double' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\ColorConvert.c(106,11): warning C4244: 'return': 'double' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\ColorConvert.c(108,10): warning C4244: 'return': 'double' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\ColorConvert.c(115,11): warning C4244: 'return': 'double' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\ColorConvert.c(119,11): warning C4244: 'return': 'double' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\ColorConvert.c(121,10): warning C4244: 'return': 'double' から 'int' への変換です。データが失われる可能性があります。
+﻿  main.c
+C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\main.c(42,19): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\main.c(44,23): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\main.c(46,27): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\main.c(66,27): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\main.c(13,11): warning C4101: 'fo': ローカル変数は 1 度も使われていません。
+C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\main.c(10,14): warning C4101: 'sum': ローカル変数は 1 度も使われていません。
+C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\main.c(10,9): warning C4101: 'ave': ローカル変数は 1 度も使われていません。
   Talking KokuraOri.vcxproj -> C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Debug\Talking KokuraOri.exe
