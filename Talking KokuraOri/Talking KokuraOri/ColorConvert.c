@@ -5,7 +5,7 @@ HSB RGBtoHSB(RGB* color)
 	HSB hsb;
 	int max, min, diff;
 
-	printf("converter in(r:%d g:%d b:%d)\n", color->r, color->g, color->b);
+	//printf("converter in(r:%d g:%d b:%d)\n", color->r, color->g, color->b);
 
 	max = Max(color->r, color->g, color->b);
 	min = Min(color->r, color->g, color->b);
@@ -40,8 +40,8 @@ HSB RGBtoHSB(RGB* color)
 	hsb.s = (max == 0) ? 0 : (int)(((float)diff / (float)max) * 100.0);
 	hsb.b = (int)(((float)max / (float)255) * 100.0);
 
-	printf("max:%d min:%d diff:%d\n", max, min, diff);
-	printf("converter out(h:%d s:%d b:%d)\n", hsb.h, hsb.s, hsb.b);
+	//printf("max:%d min:%d diff:%d\n", max, min, diff);
+	//printf("converter out(h:%d s:%d b:%d)\n", hsb.h, hsb.s, hsb.b);
 
 	return hsb;
 }
@@ -50,10 +50,14 @@ RGB HSBtoRGB(HSB* color)
 {
 	RGB rgb;
 	int max, min, diff;
+	
+	//printf("converter in(h:%d s:%d b:%d)\n", color->h, color->s, color->b);
 
 	max = color->b;
 	min = (int)((float)max - (((float)color->s / 100.0) * max));
 	diff = max - min;
+
+	//printf("max:%d min:%d diff:%d\n", max, min, diff);
 
 	if (0 <= color->h && color->h < 60)
 	{
@@ -91,6 +95,8 @@ RGB HSBtoRGB(HSB* color)
 		rgb.g = min;
 		rgb.b = (int)(((360.0 - (float)color->h) / 60.0) * diff + min);
 	}
+
+	//printf("converter out(r:%d g:%d b:%d)\n", rgb.r, rgb.g, rgb.b);
 
 	return rgb;
 }

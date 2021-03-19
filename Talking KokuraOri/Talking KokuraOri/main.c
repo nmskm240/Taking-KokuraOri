@@ -6,13 +6,16 @@
 int main(void) {
 
     BITMAPDATA_t bitmap;
-    int i, j, c;
-    int ave, sum;
+    int i, j;
     char outname[256];
 
     FILE* fo;
 
-    if (pngFileReadDecode(&bitmap, "C:\\Users\\bokar\\Downloads\\バーコード\\バーコード\\arigato.png") == -1) {
+    RGB rgb;
+    HSB hsb;
+
+    if (pngFileReadDecode(&bitmap, "C:\\Users\\bokar\\Downloads\\バーコード\\バーコード\\arigato.png") == -1) 
+    {
         printf("pngFileReadDecode error\n");
         return -1;
     }
@@ -22,68 +25,41 @@ int main(void) {
     printf("bitmap->height = %d\n", bitmap.height);
     printf("bitmap->ch = %d\n", bitmap.ch);
 
-    ///* グレースケールに変換 */
-    //for (j = 0; j < bitmap.height; j++) {
-    //    for (i = 0; i < bitmap.width; i++) {
-    //        sum = 0;
-    //        for (c = 0; c < bitmap.ch; c++) {
-    //            sum += bitmap.data[bitmap.ch * (i + j * bitmap.width) + c];
-    //        }
-    //        ave = sum / bitmap.ch;
-    //        for (c = 0; c < bitmap.ch; c++) {
-    //            bitmap.data[bitmap.ch * (i + j * bitmap.width) + c] = ave;
-    //        }
-    //    }
-    //}
-
-    RGB rgb;
-    HSB hsb;
-
-    for (j = 0; j < bitmap.height; j++)
+    for (i = 0; i < bitmap.width; i++)
     {
-        for (i = 0; i < bitmap.width; i++)
+        rgb.r = bitmap.data[bitmap.ch * i];
+        rgb.g = bitmap.data[bitmap.ch * i + 1];
+        rgb.b = bitmap.data[bitmap.ch * i + 2];
+
+        hsb = RGBtoHSB(&rgb);
+        printf("h:%d s:%d b:%d\n", hsb.h, hsb.s, hsb.b);
+
+        hsb.h = 20;
+        hsb.s = 90;
+        hsb.b = 100 - hsb.b;
+
+        rgb = HSBtoRGB(&hsb);
+        printf("r:%d g:%d b:%d\n", rgb.r, rgb.g, rgb.b);
+
+        bitmap.data[bitmap.ch * i] = rgb.r;
+        bitmap.data[bitmap.ch * i + 1] = rgb.g;
+        bitmap.data[bitmap.ch * i + 2] = rgb.b;
+    }
+
+    for (j = 1; j < bitmap.height; j++)
+    {
+        for (i = 1; i < bitmap.width; i++)
         {
-            for (c = 0; c < bitmap.ch; c++)
-            {
-                if (c == 0)
-                {
-                    rgb.r = bitmap.data[bitmap.ch * (i + j * bitmap.width) + c];
-                }
-                else if (c == 1)
-                {
-                    rgb.g= bitmap.data[bitmap.ch * (i + j * bitmap.width) + c];
-                }
-                else if (c == 2)
-                {
-                    rgb.b = bitmap.data[bitmap.ch * (i + j * bitmap.width) + c];
-                }
-            }
-            hsb = RGBtoHSB(&rgb);
-            hsb.h = 20;
-            hsb.s = 100 - hsb.s;
-            hsb.b = 90;
-            rgb = HSBtoRGB(&hsb);
-            for (c = 0; c < bitmap.ch; c++)
-            {
-                if (c == 0)
-                {
-                    bitmap.data[bitmap.ch * (i + j * bitmap.width) + c] = rgb.r;
-                }
-                else if (c == 1)
-                {
-                    bitmap.data[bitmap.ch * (i + j * bitmap.width) + c] = rgb.g;
-                }
-                else if (c == 2)
-                {
-                    bitmap.data[bitmap.ch * (i + j * bitmap.width) + c] = rgb.b;
-                }
-            }
+            bitmap.data[bitmap.ch * (i + j * bitmap.width)] = bitmap.data[bitmap.ch * (i + (j - 1) * bitmap.width)];
+            bitmap.data[bitmap.ch * (i + j * bitmap.width) + 1] = bitmap.data[bitmap.ch * (i + (j - 1) * bitmap.width) + 1];
+            bitmap.data[bitmap.ch * (i + j * bitmap.width) + 2] = bitmap.data[bitmap.ch * (i + (j - 1) * bitmap.width) + 2];
         }
     }
 
     sprintf(outname, "%s", "output.PNG");
 
-    if (pngFileEncodeWrite(&bitmap, outname) == -1) {
+    if (pngFileEncodeWrite(&bitmap, outname) == -1) 
+    {
         printf("pngFileEncodeWrite error\n");
         freeBitmapData(&bitmap);
         return -1;

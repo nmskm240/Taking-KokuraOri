@@ -1,9 +1,6 @@
 ﻿  main.c
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\main.c(42,19): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\main.c(44,23): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\main.c(46,27): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\main.c(66,27): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\main.c(13,11): warning C4101: 'fo': ローカル変数は 1 度も使われていません。
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\main.c(10,14): warning C4101: 'sum': ローカル変数は 1 度も使われていません。
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\main.c(10,9): warning C4101: 'ave': ローカル変数は 1 度も使われていません。
+C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\main.c(28,19): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\main.c(49,19): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\main.c(51,23): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\main.c(12,11): warning C4101: 'fo': ローカル変数は 1 度も使われていません。
   Talking KokuraOri.vcxproj -> C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Debug\Talking KokuraOri.exe
