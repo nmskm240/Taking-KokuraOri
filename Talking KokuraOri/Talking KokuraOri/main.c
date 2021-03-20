@@ -1,5 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 
+#include <stdio.h>
+
 #include "myPng.h"
 #include "colorConvert.h"
 
@@ -8,8 +10,9 @@ int main(void) {
     BITMAPDATA_t bitmap;
     int i, j;
     char outname[256];
+    char readTarget[256];
 
-    FILE* fo;
+    FILE* file;
 
     RGB rgb;
     HSB hsb;
@@ -29,8 +32,8 @@ int main(void) {
         hsb = RGBtoHSB(&rgb);
 
         hsb.h = 20;
-        hsb.s = 90;
-        hsb.b = 100 - hsb.b;
+        hsb.s = 100 - hsb.b;
+        hsb.b = 90;
 
         rgb = HSBtoRGB(&hsb);
 

@@ -34,7 +34,7 @@ HSB RGBtoHSB(RGB* color)
 
 	if (hsb.h < 0)
 	{
-		hsb.h += 360.0;
+		hsb.h += 360;
 	}
 
 	hsb.s = (max == 0) ? 0 : (int)(((float)diff / (float)max) * 100.0);
@@ -53,8 +53,11 @@ RGB HSBtoRGB(HSB* color)
 	
 	//printf("converter in(h:%d s:%d b:%d)\n", color->h, color->s, color->b);
 
+	color->s = color->s * (255.0f / 100.0f);
+	color->b = color->b * (255.0f / 100.0f);
+	
 	max = color->b;
-	min = (int)((float)max - (((float)color->s / 100.0) * max));
+	min = (int)((float)max - (((float)color->s / 255.0f) * max));
 	diff = max - min;
 
 	//printf("max:%d min:%d diff:%d\n", max, min, diff);
@@ -62,7 +65,7 @@ RGB HSBtoRGB(HSB* color)
 	if (0 <= color->h && color->h < 60)
 	{
 		rgb.r = max;
-		rgb.g = (int)(((float)color->h / 60.0) * diff + min);
+		rgb.g = (int)(((float)color->h / 60.0f) * diff + min);
 		rgb.b = min;
 	}
 	else if (60 <= color->h && color->h < 120)
