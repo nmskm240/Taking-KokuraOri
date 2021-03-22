@@ -1,4 +1,8 @@
-﻿  reversePoland.c
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\reversePoland.c(79): warning C4715: 'convertReversePol': 値を返さないコントロール パスがあります。
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\reversePoland.c(161): warning C4715: 'priority': 値を返さないコントロール パスがあります。
+﻿  main.c
+C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\main.c(69,19): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\main.c(163,23): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+  reversePoland.c
+  コードを生成中...
+C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\reversePoland.c(78): warning C4715: 'convertReversePol': 値を返さないコントロール パスがあります。
+C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\reversePoland.c(172): warning C4715: 'priority': 値を返さないコントロール パスがあります。
   Talking KokuraOri.vcxproj -> C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Debug\Talking KokuraOri.exe

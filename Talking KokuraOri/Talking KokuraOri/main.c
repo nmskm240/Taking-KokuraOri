@@ -1,7 +1,8 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <string.h>
 #include "myPng.h"
 #include "colorConvert.h"
 #include "reversePoland.h"
@@ -14,13 +15,14 @@ int main(void) {
     char filename[256] = { "\0" };
     char inputPath[270] = { "\0" };
     char outputPath[270] = { "\0" };
-    char inputBuf[256];
+    char inputBuf[256] = { '\0' };
     char hFormula[256] = { '\0' };
     char sFormula[256] = { '\0' };
     char bFormula[256] = { '\0' };
 
     RGB rgb;
     HSB hsb;
+    HSB gray;
 
     printf("inputフォルダー内部に存在する、対象とするファイル名を入力してください。\n");
     scanf("%s", &filename);
@@ -36,7 +38,11 @@ int main(void) {
 
     printf("......完了\n");
 
+    //printf("変換を行うHの範囲を入力してください。\n");
+    //printf("0<=");
+
     printf("変換式を入力してください。\n");
+    printf("元画像のHSBを使用する場合、h、s、bを入力することで各値を使用できます。\n");
     printf("H=");
     scanf("%s%c", &inputBuf, &dummy);
     if (convertReversePol(inputBuf, hFormula) == -1)
@@ -68,10 +74,90 @@ int main(void) {
         rgb.b = bitmap.data[bitmap.ch * i + 2];
 
         hsb = RGBtoHSB(&rgb);
+        gray = hsb;
 
-        hsb.h = reversePolandAns(hFormula);
-        hsb.s = reversePolandAns(sFormula);
-        hsb.b = reversePolandAns(bFormula);
+        //春
+        //if (0 <= hsb.b && hsb.b <= 55)
+        //{
+        //    hsb.h = 0;
+        //}
+        //else if (55 < hsb.b && hsb.b <= 70)
+        //{
+        //    hsb.h = 330;
+        //}
+        //else
+        //{
+        //    hsb.h = 150;
+        //}
+        //hsb.s = 100 - hsb.b;
+        //hsb.b = 90;
+
+        //夏
+        //if (0 <= hsb.b && hsb.b <= 55)
+        //{
+        //    hsb.h = 56;
+        //}
+        //else if (55 < hsb.b && hsb.b <= 60)
+        //{
+        //    hsb.h = 135;
+        //}
+        //else
+        //{
+        //    hsb.h = 150;
+        //}
+        //hsb.s = 100 - hsb.b;
+        //hsb.b = 90;
+
+        ////秋
+        //if (0 <= hsb.b && hsb.b <= 55)
+        //{
+        //    hsb.h = 30;
+        //    hsb.s = 100 - hsb.b;
+        //    hsb.b = 90;
+        //}
+        //else if (55 < hsb.b && hsb.b <= 60)
+        //{
+        //    hsb.h = 10;
+        //    hsb.s = 100 - hsb.b;
+        //    hsb.b = 90;
+        //}
+        //else
+        //{
+        //    hsb.h = 10;
+        //    hsb.s = 100 - hsb.b;
+        //}
+
+        //冬
+        //if(80 < hsb.h)
+        //{
+        //    hsb.h = 260;
+        //    hsb.s = 100 - hsb.b;
+        //}
+
+        if (strchr(hFormula, (int)'+') == NULL && strchr(hFormula, (int)'-') == NULL && strchr(hFormula, (int)'*') == NULL && strchr(hFormula, (int)'/') == NULL)
+        {
+            hsb.h = atoi(hFormula);
+        }
+        else
+        {
+            hsb.h = reversePolandAns(hFormula, gray.h, gray.s, gray.b);
+        }
+        if (strchr(sFormula, (int)'+') == NULL && strchr(sFormula, (int)'-') == NULL && strchr(sFormula, (int)'*') == NULL && strchr(sFormula, (int)'/') == NULL)
+        {
+            hsb.s = atoi(sFormula);
+        }
+        else
+        {
+            hsb.s = reversePolandAns(sFormula, gray.h, gray.s, gray.b);
+        }
+        if (strchr(bFormula, (int)'+') == NULL && strchr(bFormula, (int)'-') == NULL && strchr(bFormula, (int)'*') == NULL && strchr(bFormula, (int)'/') == NULL)
+        {
+            hsb.b = atoi(bFormula);
+        }
+        else
+        {
+            hsb.b = reversePolandAns(bFormula, gray.h, gray.s, gray.b);
+        }
 
         rgb = HSBtoRGB(&hsb);
 

@@ -25,9 +25,9 @@ int convertReversePol(const char* formula, char* resultBuffer)
             snprintf(stack, 100, "%s%c", stack, ',');
             switch (formula[i])
             {
-                case '(':
-                case ')':
-                    break;
+                //case '(':
+                //case ')':
+                //    break;
                 case '+':
                 case '-':
                 case '*':
@@ -77,16 +77,16 @@ int convertReversePol(const char* formula, char* resultBuffer)
     sprintf(resultBuffer, "%s", stack);
 }
 
-int reversePolandAns(const char* pol)
+int reversePolandAns(const char* pol, int h, int s, int b)
 {
-    int stack[100];
+    int stack[100] = { 0 };
     int sp = 0;
     int i;
     int value = 0;
     int _1stValue;
     int _2ndValue;
 
-    //printf("%s\n", pol);
+    //printf("cal:%s\n", pol);
 
     for (i = 0; pol[i] != '\0'; i++) 
     {
@@ -99,6 +99,18 @@ int reversePolandAns(const char* pol)
             }
             push(&sp, stack, value);
             value = 0;
+        }
+        else if (pol[i] == 'h')
+        {
+            push(&sp, stack, h);
+        }
+        else if (pol[i] == 's')
+        {
+            push(&sp, stack, s);
+        }
+        else if (pol[i] == 'b')
+        {
+            push(&sp, stack, b);
         }
         else
         {
@@ -120,9 +132,8 @@ int reversePolandAns(const char* pol)
                 _1stValue = pop(&sp, stack);
                 push(&sp, stack, _1stValue * _2ndValue);
             }
-            else
+            else if(pol[i] == '/')
             {
-                // if  (pol[i] == '/')
                 _2ndValue = pop(&sp, stack);
                 _1stValue = pop(&sp, stack);
                 push(&sp, stack, _1stValue / _2ndValue);
