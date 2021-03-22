@@ -1,6 +1,4 @@
-﻿  ColorConvert.c
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\ColorConvert.c(10,11): warning C4013: 関数 'Max' は定義されていません。int 型の値を返す外部関数と見なします。
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\ColorConvert.c(11,11): warning C4013: 関数 'Min' は定義されていません。int 型の値を返す外部関数と見なします。
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\ColorConvert.c(56,41): warning C4244: '=': 'float' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\ColorConvert.c(57,41): warning C4244: '=': 'float' から 'int' への変換です。データが失われる可能性があります。
+﻿  reversePoland.c
+C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\reversePoland.c(79): warning C4715: 'convertReversePol': 値を返さないコントロール パスがあります。
+C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\reversePoland.c(161): warning C4715: 'priority': 値を返さないコントロール パスがあります。
   Talking KokuraOri.vcxproj -> C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Debug\Talking KokuraOri.exe

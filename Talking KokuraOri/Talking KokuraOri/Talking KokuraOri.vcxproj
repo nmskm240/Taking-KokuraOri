@@ -147,10 +147,12 @@
     <ClCompile Include="main.c" />
     <ClCompile Include="myPng.c" />
     <ClCompile Include="ColorConvert.c" />
+    <ClCompile Include="reversePoland.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="myPng.h" />
     <ClInclude Include="colorConvert.h" />
+    <ClInclude Include="reversePoland.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
