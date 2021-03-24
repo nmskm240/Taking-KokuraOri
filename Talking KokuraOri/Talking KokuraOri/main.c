@@ -11,14 +11,16 @@ int main(void) {
 
     BITMAPDATA_t bitmap;
     char dummy;
-    int i, j;
+    int i, j, k, c = 1;
     char filename[256] = { "\0" };
     char inputPath[270] = { "\0" };
     char outputPath[270] = { "\0" };
     char inputBuf[256] = { '\0' };
-    char hFormula[256] = { '\0' };
-    char sFormula[256] = { '\0' };
-    char bFormula[256] = { '\0' };
+    char hFormula[10][256] = { '\0' };
+    char sFormula[10][256] = { '\0' };
+    char bFormula[10][256] = { '\0' };
+    int rangeMin[256] = { -1 };
+    int rangeMax[256] = { -1 };
 
     RGB rgb;
     HSB hsb;
@@ -38,31 +40,58 @@ int main(void) {
 
     printf("......完了\n");
 
-    //printf("変換を行うHの範囲を入力してください。\n");
-    //printf("0<=");
+    printf("変換元画像のBの値によって、変換式を変更しますか？[y/n]。");
+    scanf("%s", &inputBuf);
+    if (inputBuf[0] == 'y')
+    {
+        printf("Bを何分割しますか？(上限10)\n");
+        printf("分割数:");
+        scanf("%d", &c);
+        if (c > 10)
+        {
+            printf("利用できる最大分割数は10です。\n");
+            return -1;
+        }
+        for (i = 0; i < c; i++)
+        {
+            printf("%d/%d\n", i + 1, c);
+            printf("範囲の下限を入力してください。:");
+            scanf("%d", &rangeMin[i]);
+            printf("範囲の上限を入力してください。:");
+            scanf("%d", &rangeMax[i]);
+        }
+    }
+    else
+    {
+        rangeMin[0] = 0;
+        rangeMax[0] = 100;
+    }
 
-    printf("変換式を入力してください。\n");
-    printf("元画像のHSBを使用する場合、h、s、bを入力することで各値を使用できます。\n");
-    printf("H=");
-    scanf("%s%c", &inputBuf, &dummy);
-    if (convertReversePol(inputBuf, hFormula) == -1)
+    for (i = 0; i < c; i++)
     {
-        printf("error");
-        return -1;
-    }
-    printf("S=");
-    scanf("%s%c", &inputBuf, &dummy);
-    if(convertReversePol(inputBuf, sFormula) == -1)
-    {
-        printf("error");
-        return -1;
-    }
-    printf("B=");
-    scanf("%s%c", &inputBuf, &dummy);
-    if (convertReversePol(inputBuf, bFormula) == -1)
-    {
-        printf("error");
-        return -1;
+        printf("元画像のBが%d～%dの時に使用する変換式を入力してください。\n", rangeMin[i] < 0 ? 0 : rangeMin[i], rangeMax[i] > 100 ? 100 : rangeMax[i]);
+        printf("元画像のHSBを使用する場合、h、s、bを入力することで各値を使用できます。\n");
+        printf("H=");
+        scanf("%s%c", &inputBuf, &dummy);
+        if (convertReversePol(inputBuf, hFormula[i]) == -1)
+        {
+            printf("error");
+            return -1;
+        }
+        printf("S=");
+        scanf("%s%c", &inputBuf, &dummy);
+        if (convertReversePol(inputBuf, sFormula[i]) == -1)
+        {
+            printf("error");
+            return -1;
+        }
+        printf("B=");
+        scanf("%s%c", &inputBuf, &dummy);
+        if (convertReversePol(inputBuf, bFormula[i]) == -1)
+        {
+            printf("error");
+            return -1;
+        }
     }
 
     printf("色変換を開始");
@@ -76,87 +105,94 @@ int main(void) {
         hsb = RGBtoHSB(&rgb);
         gray = hsb;
 
-        //春
-        //if (0 <= hsb.b && hsb.b <= 55)
-        //{
-        //    hsb.h = 0;
-        //}
-        //else if (55 < hsb.b && hsb.b <= 70)
-        //{
-        //    hsb.h = 330;
-        //}
-        //else
-        //{
-        //    hsb.h = 150;
-        //}
-        //hsb.s = 100 - hsb.b;
-        //hsb.b = 90;
+        for (k = 0; k < c; k++)
+        {
+            //春
+            //if (0 <= hsb.b && hsb.b <= 55)
+            //{
+            //    hsb.h = 0;
+            //}
+            //else if (55 < hsb.b && hsb.b <= 70)
+            //{
+            //    hsb.h = 330;
+            //}
+            //else
+            //{
+            //    hsb.h = 150;
+            //}
+            //hsb.s = 100 - hsb.b;
+            //hsb.b = 90;
 
-        //夏
-        //if (0 <= hsb.b && hsb.b <= 55)
-        //{
-        //    hsb.h = 56;
-        //}
-        //else if (55 < hsb.b && hsb.b <= 60)
-        //{
-        //    hsb.h = 135;
-        //}
-        //else
-        //{
-        //    hsb.h = 150;
-        //}
-        //hsb.s = 100 - hsb.b;
-        //hsb.b = 90;
+            //夏
+            //if (0 <= hsb.b && hsb.b <= 55)
+            //{
+            //    hsb.h = 56;
+            //}
+            //else if (55 < hsb.b && hsb.b <= 60)
+            //{
+            //    hsb.h = 135;
+            //}
+            //else
+            //{
+            //    hsb.h = 150;
+            //}
+            //hsb.s = 100 - hsb.b;
+            //hsb.b = 90;
 
-        ////秋
-        //if (0 <= hsb.b && hsb.b <= 55)
-        //{
-        //    hsb.h = 30;
-        //    hsb.s = 100 - hsb.b;
-        //    hsb.b = 90;
-        //}
-        //else if (55 < hsb.b && hsb.b <= 60)
-        //{
-        //    hsb.h = 10;
-        //    hsb.s = 100 - hsb.b;
-        //    hsb.b = 90;
-        //}
-        //else
-        //{
-        //    hsb.h = 10;
-        //    hsb.s = 100 - hsb.b;
-        //}
+            ////秋
+            //if (0 <= hsb.b && hsb.b <= 55)
+            //{
+            //    hsb.h = 30;
+            //    hsb.s = 100 - hsb.b;
+            //    hsb.b = 90;
+            //}
+            //else if (55 < hsb.b && hsb.b <= 60)
+            //{
+            //    hsb.h = 10;
+            //    hsb.s = 100 - hsb.b;
+            //    hsb.b = 90;
+            //}
+            //else
+            //{
+            //    hsb.h = 10;
+            //    hsb.s = 100 - hsb.b;
+            //}
 
-        //冬
-        //if(80 < hsb.h)
-        //{
-        //    hsb.h = 260;
-        //    hsb.s = 100 - hsb.b;
-        //}
+            //冬
+            //if(80 < hsb.h)
+            //{
+            //    hsb.h = 260;
+            //    hsb.s = 100 - hsb.b;
+            //}
 
-        if (strchr(hFormula, (int)'+') == NULL && strchr(hFormula, (int)'-') == NULL && strchr(hFormula, (int)'*') == NULL && strchr(hFormula, (int)'/') == NULL)
-        {
-            hsb.h = atoi(hFormula);
-        }
-        else
-        {
-            hsb.h = reversePolandAns(hFormula, gray.h, gray.s, gray.b);
-        }
-        if (strchr(sFormula, (int)'+') == NULL && strchr(sFormula, (int)'-') == NULL && strchr(sFormula, (int)'*') == NULL && strchr(sFormula, (int)'/') == NULL)
-        {
-            hsb.s = atoi(sFormula);
-        }
-        else
-        {
-            hsb.s = reversePolandAns(sFormula, gray.h, gray.s, gray.b);
-        }
-        if (strchr(bFormula, (int)'+') == NULL && strchr(bFormula, (int)'-') == NULL && strchr(bFormula, (int)'*') == NULL && strchr(bFormula, (int)'/') == NULL)
-        {
-            hsb.b = atoi(bFormula);
-        }
-        else
-        {
-            hsb.b = reversePolandAns(bFormula, gray.h, gray.s, gray.b);
+            if (rangeMin[k] <= hsb.b && hsb.b <= rangeMax[k])
+            {
+                if (strchr(hFormula[k], (int)'+') == NULL && strchr(hFormula[k], (int)'-') == NULL && strchr(hFormula[k], (int)'*') == NULL && strchr(hFormula[k], (int)'/') == NULL)
+                {
+                    hsb.h = atoi(hFormula[k]);
+                }
+                else
+                {
+                    hsb.h = reversePolandAns(hFormula[k], gray.h, gray.s, gray.b);
+                }
+                if (strchr(sFormula[k], (int)'+') == NULL && strchr(sFormula[k], (int)'-') == NULL && strchr(sFormula[k], (int)'*') == NULL && strchr(sFormula[k], (int)'/') == NULL)
+                {
+                    hsb.s = atoi(sFormula[k]);
+                }
+                else
+                {
+                    hsb.s = reversePolandAns(sFormula[k], gray.h, gray.s, gray.b);
+                }
+                if (strchr(bFormula[k], (int)'+') == NULL && strchr(bFormula[k], (int)'-') == NULL && strchr(bFormula[k], (int)'*') == NULL && strchr(bFormula[k], (int)'/') == NULL)
+                {
+                    hsb.b = atoi(bFormula[k]);
+                }
+                else
+                {
+                    hsb.b = reversePolandAns(bFormula[k], gray.h, gray.s, gray.b);
+                }
+                break;
+            }
         }
 
         rgb = HSBtoRGB(&hsb);

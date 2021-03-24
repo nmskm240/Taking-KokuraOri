@@ -10,6 +10,7 @@ int convertReversePol(const char* formula, char* resultBuffer)
     int sp = 0;
     int value = 0;
     int i;
+    int inbracket = 0;
 
     //printf("converter in %s\n", formula);
 
@@ -22,16 +23,26 @@ int convertReversePol(const char* formula, char* resultBuffer)
         }
         else
         {
-            snprintf(stack, 100, "%s%c", stack, ',');
             switch (formula[i])
             {
-                //case '(':
-                //case ')':
-                //    break;
+                case '(':
+                    inbracket++;
+                    break;
+                case ')':
+                    inbracket--;
+                    if (inbracket > 0)
+                    {
+                        while (sp != 0)
+                        {
+                            snprintf(stack, 100, "%s%c%c", stack, ',', (unsigned char)pop(&sp, buffer));
+                        }
+                    }
+                    break;
                 case '+':
                 case '-':
                 case '*':
                 case '/':
+                    snprintf(stack, 100, "%s%c", stack, ',');
                     if (sp == 0)
                     {
                         push(&sp, buffer, (int)formula[i]);
