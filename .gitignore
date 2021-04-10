@@ -51,3 +51,5 @@ Module.symvers
 Mkfile.old
 dkms.conf
 TODO.txt
+Wav2PNG_20201025/Wav2PNG/java/
+Wav2PNG_20201025/Wav2PNG/lib/

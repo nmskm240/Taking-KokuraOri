@@ -7,18 +7,18 @@
 #include "colorConvert.h"
 #include "reversePoland.h"
 
-int main(void) {
-
+int main(int argc, char *argv[]) 
+{
     BITMAPDATA_t bitmap;
     char dummy;
     int i, j, k, c = 1;
-    char filename[256] = { "\0" };
-    char inputPath[270] = { "\0" };
-    char outputPath[270] = { "\0" };
+    char inputPath[256] = { "\0" };
+    char outputPath[256] = { "\0" };
     char inputBuf[256] = { '\0' };
     char hFormula[10][256] = { '\0' };
     char sFormula[10][256] = { '\0' };
     char bFormula[10][256] = { '\0' };
+    char formatPNG[] = ".png";
     int rangeMin[256] = { -1 };
     int rangeMax[256] = { -1 };
 
@@ -26,9 +26,7 @@ int main(void) {
     HSB hsb;
     HSB gray;
 
-    printf("inputフォルダー内部に存在する、対象とするファイル名を入力してください。\n");
-    scanf("%s", &filename);
-    snprintf(inputPath, 256, "%s%s", "input\\", filename);
+    snprintf(inputPath, 256, "%s%s%s", "..\\..\\input\\", argv[1], formatPNG);
 
     printf("画像の読み込みを開始");
 
@@ -207,7 +205,7 @@ int main(void) {
 
     printf(".........完了\n");
 
-    sprintf(outputPath, "%s%s", "output\\", filename);
+    sprintf(outputPath, "%s%s%s", "..\\..\\output\\", argv[1], formatPNG);
 
     printf("画像のエンコードを開始");
 

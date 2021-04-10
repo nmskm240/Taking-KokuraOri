@@ -1,18 +1,5 @@
-﻿  main.c
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\main.c(99,19): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\main.c(200,23): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
-  myPng.c
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\myPng.c(83,19): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\myPng.c(130,19): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\myPng.c(136,19): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
-  ColorConvert.c
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\ColorConvert.c(10,11): warning C4013: 関数 'Max' は定義されていません。int 型の値を返す外部関数と見なします。
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\ColorConvert.c(11,11): warning C4013: 関数 'Min' は定義されていません。int 型の値を返す外部関数と見なします。
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\ColorConvert.c(56,41): warning C4244: '=': 'float' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\ColorConvert.c(57,41): warning C4244: '=': 'float' から 'int' への変換です。データが失われる可能性があります。
-  reversePoland.c
-  コードを生成中...
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\reversePoland.c(182): warning C4715: 'priority': 値を返さないコントロール パスがあります。
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\reversePoland.c(89): warning C4715: 'convertReversePol': 値を返さないコントロール パスがあります。
-LINK : warning LNK4098: defaultlib 'LIBCMTD' は他のライブラリの使用と競合しています。/NODEFAULTLIB:library を使用してください。
-  Talking KokuraOri.vcxproj -> C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Debug\Talking KokuraOri.exe
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(467,5): warning MSB8028: 中間ディレクトリ (Debug\) に別のプロジェクト (Talking KokuraOri.vcxproj) と共有されているファイルが含まれています。これにより、クリーンしてリビルド動作が適切に行われない可能性があります。
+  main.c
+C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\main.c(97,19): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Talking KokuraOri\main.c(198,23): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+  Talking KokuraOri.vcxproj -> C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\Debug\Barcode2KokuraOri.exe

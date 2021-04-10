@@ -23,6 +23,7 @@
     <ProjectGuid>{6658FE91-C3B4-419F-89E3-A075E7863A72}</ProjectGuid>
     <RootNamespace>TalkingKokuraOri</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Barcode2KokuraOri</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
