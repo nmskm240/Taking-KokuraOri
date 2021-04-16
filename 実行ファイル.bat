@@ -16,8 +16,12 @@ ECHO  inputフォルダに存在するファイル名を入力してください
 ECHO +-------------------------------------------------------+
 SET /P filename=
  
-IF "%filename%"=="" (GOTO FILE_SELECT)
-IF EXIST %filename%%formatWAV% (GOTO Wav2PNG) ELSE (GOTO FILE_SELECT)
+:IF "%filename%"=="" (GOTO FILE_SELECT)
+:IF EXIST %filename%%formatWAV% (GOTO Wav2PNG) ELSE (GOTO FILE_SELECT)
+
+cd /d %~dp0
+cd Text2Wav/Text2Wav/bin/Debug
+call Text2Wav.exe %filename%
 
 :Wav2PNG
 cd /d %~dp0

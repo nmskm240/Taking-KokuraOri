@@ -10,8 +10,8 @@
 int main(int argc, char *argv[]) 
 {
     BITMAPDATA_t bitmap;
-    char dummy;
     int i, j, k, c = 1;
+    char dummy[256] = { "\0" };
     char inputPath[256] = { "\0" };
     char outputPath[256] = { "\0" };
     char inputBuf[256] = { '\0' };
@@ -26,8 +26,16 @@ int main(int argc, char *argv[])
     HSB hsb;
     HSB gray;
 
-    snprintf(inputPath, 256, "%s%s%s", "..\\..\\input\\", argv[1], formatPNG);
-
+    if (argc == 2)
+    {
+        snprintf(inputPath, 256, "%s%s%s", "..\\..\\input\\", argv[1], formatPNG);
+    }
+    else
+    {
+        printf("小倉織に変換するinputフォルダ内のpngファイル名を入力してください\n");
+        scanf("%s", &dummy);
+        snprintf(inputPath, 256, "%s%s%s", "..\\..\\input\\", dummy, formatPNG);
+    }
     printf("画像の読み込みを開始");
 
     if (pngFileReadDecode(&bitmap, inputPath) == -1)
@@ -70,21 +78,21 @@ int main(int argc, char *argv[])
         printf("元画像のBが%d～%dの時に使用する変換式を入力してください。\n", rangeMin[i] < 0 ? 0 : rangeMin[i], rangeMax[i] > 100 ? 100 : rangeMax[i]);
         printf("元画像のHSBを使用する場合、h、s、bを入力することで各値を使用できます。\n");
         printf("H=");
-        scanf("%s%c", &inputBuf, &dummy);
+        scanf("%s", &inputBuf);
         if (convertReversePol(inputBuf, hFormula[i]) == -1)
         {
             printf("error");
             return -1;
         }
         printf("S=");
-        scanf("%s%c", &inputBuf, &dummy);
+        scanf("%s", &inputBuf);
         if (convertReversePol(inputBuf, sFormula[i]) == -1)
         {
             printf("error");
             return -1;
         }
         printf("B=");
-        scanf("%s%c", &inputBuf, &dummy);
+        scanf("%s", &inputBuf);
         if (convertReversePol(inputBuf, bFormula[i]) == -1)
         {
             printf("error");
@@ -105,64 +113,6 @@ int main(int argc, char *argv[])
 
         for (k = 0; k < c; k++)
         {
-            //春
-            //if (0 <= hsb.b && hsb.b <= 55)
-            //{
-            //    hsb.h = 0;
-            //}
-            //else if (55 < hsb.b && hsb.b <= 70)
-            //{
-            //    hsb.h = 330;
-            //}
-            //else
-            //{
-            //    hsb.h = 150;
-            //}
-            //hsb.s = 100 - hsb.b;
-            //hsb.b = 90;
-
-            //夏
-            //if (0 <= hsb.b && hsb.b <= 55)
-            //{
-            //    hsb.h = 56;
-            //}
-            //else if (55 < hsb.b && hsb.b <= 60)
-            //{
-            //    hsb.h = 135;
-            //}
-            //else
-            //{
-            //    hsb.h = 150;
-            //}
-            //hsb.s = 100 - hsb.b;
-            //hsb.b = 90;
-
-            ////秋
-            //if (0 <= hsb.b && hsb.b <= 55)
-            //{
-            //    hsb.h = 30;
-            //    hsb.s = 100 - hsb.b;
-            //    hsb.b = 90;
-            //}
-            //else if (55 < hsb.b && hsb.b <= 60)
-            //{
-            //    hsb.h = 10;
-            //    hsb.s = 100 - hsb.b;
-            //    hsb.b = 90;
-            //}
-            //else
-            //{
-            //    hsb.h = 10;
-            //    hsb.s = 100 - hsb.b;
-            //}
-
-            //冬
-            //if(80 < hsb.h)
-            //{
-            //    hsb.h = 260;
-            //    hsb.s = 100 - hsb.b;
-            //}
-
             if (rangeMin[k] <= hsb.b && hsb.b <= rangeMax[k])
             {
                 if (strchr(hFormula[k], (int)'+') == NULL && strchr(hFormula[k], (int)'-') == NULL && strchr(hFormula[k], (int)'*') == NULL && strchr(hFormula[k], (int)'/') == NULL)
@@ -205,7 +155,14 @@ int main(int argc, char *argv[])
 
     printf(".........完了\n");
 
-    sprintf(outputPath, "%s%s%s", "..\\..\\output\\", argv[1], formatPNG);
+    if (argc == 2)
+    {
+        snprintf(outputPath, 256, "%s%s%s", "..\\..\\output\\", argv[1], formatPNG);
+    }
+    else
+    {
+        snprintf(outputPath, 256, "%s%s%s", "..\\..\\output\\", dummy, formatPNG);
+    }
 
     printf("画像のエンコードを開始");
 
