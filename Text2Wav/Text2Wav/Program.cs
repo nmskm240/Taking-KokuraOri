@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 using Google.Cloud.TextToSpeech.V1;
-using System.Diagnostics;
+using System.Media;
 
 public class QuickStart
 {
@@ -57,11 +57,10 @@ public class QuickStart
         });
 
         // Text-to-Speech レスポンス（音声ファイル）の保存
-        fileName = "../../../../input/" +  fileName + ".wav";
-        using (Stream output = File.Create(fileName))
+        using (Stream output = File.Create("../../../../input/" + fileName + ".wav"))
         {
             response.AudioContent.WriteTo(output);
-            Console.WriteLine($"音声コンテンツを '{fileName}' として保存しました。");
+            Console.WriteLine($"音声コンテンツを '{fileName}' としてinputフォルダに保存しました。");
         }
     }
 }

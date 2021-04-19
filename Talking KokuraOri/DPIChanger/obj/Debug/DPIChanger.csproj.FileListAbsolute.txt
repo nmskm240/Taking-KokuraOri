@@ -1,7 +1,0 @@
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\DPIChanger\bin\Debug\DPIChanger.exe.config
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\DPIChanger\bin\Debug\DPIChanger.exe
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\DPIChanger\bin\Debug\DPIChanger.pdb
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\DPIChanger\obj\Debug\DPIChanger.csproj.CoreCompileInputs.cache
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\DPIChanger\obj\Debug\DPIChanger.exe
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\DPIChanger\obj\Debug\DPIChanger.pdb
-C:\Users\bokar\Desktop\話す小倉織\Talking KokuraOri\DPIChanger\obj\Debug\DPIChanger.csprojAssemblyReference.cache

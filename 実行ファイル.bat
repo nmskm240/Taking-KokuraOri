@@ -1,31 +1,35 @@
 @ECHO OFF
-cd /d %~dp0
+chcp 65001
+cd /d %~dp0/input
 
-SET auth=
+SET tmp=
 SET filename=
 SET inputpath=../../input/
 SET formatWAV=.wav
 SET formatPNG=.png
 SET formatCSV=.csv
 
-cd input
+:ProcessSelect
+echo +-------------------------------------------------------+
+echo  何を起動しますか？ 
+echo　1:文字列をバーコードに 
+echo　2:wavファイルをバーコードに 
+echo　3:バーコードを小倉織化 
+echo +-------------------------------------------------------+
+SET /P auth=
+IF %auth%==1 (GOTO Text2Wav) ELSE IF %auth%==2 (GOTO Wav2Png) ELSE IF %auth%==3 (GOTO Barcode2KokuraOri) ELSE (GOTO ProcessSelect)
 
-:FILE_SELECT
+:Text2Wav
 ECHO +-------------------------------------------------------+
-ECHO  inputフォルダに存在するファイル名を入力してください。
+ECHO  バーコード化する文字を入力してください。
 ECHO +-------------------------------------------------------+
 SET /P filename=
- 
-:IF "%filename%"=="" (GOTO FILE_SELECT)
-:IF EXIST %filename%%formatWAV% (GOTO Wav2PNG) ELSE (GOTO FILE_SELECT)
 
-cd /d %~dp0
-cd Text2Wav/Text2Wav/bin/Debug
+cd /d %~dp0/Text2Wav/Text2Wav/bin/Debug
 call Text2Wav.exe %filename%
 
-:Wav2PNG
-cd /d %~dp0
-cd Wav2PNG_20201025/Wav2PNG
+:Wav2Png
+cd /d %~dp0/Wav2PNG_20201025/Wav2PNG
 start /wait Wav2PNG_20201025.exe filename=%inputpath%%filename%
 
 timeout 10
@@ -33,27 +37,20 @@ timeout 10
 ECHO +-------------------------------------------------------+
 ECHO  Bracode2KokuraOriを起動しますか.。[y/n]
 ECHO +-------------------------------------------------------+
-SET /P auth=
-IF %auth%==y (GOTO Barcode2KokuraOri) ELSE (GOTO END)
+SET /P tmp=
+IF %tmp%==n (GOTO FIN)
 
 :Barcode2KokuraOri
-cd /d %~dp0
-cd Talking KokuraOri/Debug
+chcp 932
+cd /d %~dp0/Talking KokuraOri/Debug
 call Barcode2KokuraOri.exe %filename%
-GOTO FIN
-
-:END
-cd /d %~dp0
-cd input
-move %filename%%formatPNG% ../output/
-cd /d %~dp0
-cd Talking KokuraOri/DPIChanger/bin/Debug
-call DPIChanger.exe %filename%
-GOTO FIN
 
 :FIN
-cd /d %~dp0
-cd input
+cd /d %~dp0/input
+IF %tmp%==n (move %filename%%formatPNG% ../output)
+cd /d %~dp0/DPIChanger/DPIChanger/bin/Debug
+call DPIChanger.exe %filename%
+cd /d %~dp0/input
 del %filename%%formatPNG% %filename%%formatCSV%
 
 PAUSE
