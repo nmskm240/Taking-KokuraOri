@@ -30,6 +30,8 @@ call Text2Wav.exe %filename%
 
 :Wav2Png
 cd /d %~dp0/Wav2PNG_20201025/Wav2PNG
+IF %auth%==2 (echo バーコード化するwavファイル名を入力して下さい。) 
+IF %auth%==2 (SET /P filename=)
 start /wait Wav2PNG_20201025.exe filename=%inputpath%%filename%
 
 timeout 10
@@ -42,13 +44,13 @@ IF %tmp%==n (GOTO FIN)
 
 :Barcode2KokuraOri
 chcp 932
-cd /d %~dp0/Talking KokuraOri/Debug
+cd /d %~dp0/Talking KokuraOri/Release
 call Barcode2KokuraOri.exe %filename%
 
 :FIN
 cd /d %~dp0/input
 IF %tmp%==n (move %filename%%formatPNG% ../output)
-cd /d %~dp0/DPIChanger/DPIChanger/bin/Debug
+cd /d %~dp0/DPIChanger/DPIChanger/bin/Release
 call DPIChanger.exe %filename%
 cd /d %~dp0/input
 del %filename%%formatPNG% %filename%%formatCSV%

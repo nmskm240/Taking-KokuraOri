@@ -1,0 +1,7 @@
+C:\Users\bokar\Desktop\話す小倉織\DPIChanger\DPIChanger\bin\Release\DPIChanger.exe.config
+C:\Users\bokar\Desktop\話す小倉織\DPIChanger\DPIChanger\bin\Release\DPIChanger.exe
+C:\Users\bokar\Desktop\話す小倉織\DPIChanger\DPIChanger\bin\Release\DPIChanger.pdb
+C:\Users\bokar\Desktop\話す小倉織\DPIChanger\DPIChanger\obj\Release\DPIChanger.csprojAssemblyReference.cache
+C:\Users\bokar\Desktop\話す小倉織\DPIChanger\DPIChanger\obj\Release\DPIChanger.csproj.CoreCompileInputs.cache
+C:\Users\bokar\Desktop\話す小倉織\DPIChanger\DPIChanger\obj\Release\DPIChanger.exe
+C:\Users\bokar\Desktop\話す小倉織\DPIChanger\DPIChanger\obj\Release\DPIChanger.pdb

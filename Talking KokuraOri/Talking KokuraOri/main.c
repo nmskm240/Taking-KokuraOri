@@ -111,6 +111,38 @@ int main(int argc, char *argv[])
         hsb = RGBtoHSB(&rgb);
         gray = hsb;
 
+        //if (gray.b <= 15)
+        //{
+        //    hsb.h = 0;
+        //    hsb.b = 100;
+        //}
+        //else if (15 < gray.b && gray.b <= 30)
+        //{
+        //    hsb.h = 49;
+        //    hsb.b = 89;
+        //}
+        //else if(30 < gray.b && gray.b <= 40)
+        //{
+        //    hsb.h = 200;
+        //    hsb.b = 58;
+        //}
+        //else if (40 < gray.b && gray.b <= 50)
+        //{
+        //    hsb.h = 220;
+        //    hsb.b = 41;
+        //}
+        //else if (50 < gray.b && gray.b <= 75)
+        //{
+        //    hsb.h = 209;
+        //    hsb.b = 27;
+        //}
+        //else
+        //{
+        //    hsb.h = 217;
+        //    hsb.b = 20;
+        //}
+        //hsb.s = 100 - gray.b;
+
         for (k = 0; k < c; k++)
         {
             if (rangeMin[k] <= hsb.b && hsb.b <= rangeMax[k])
